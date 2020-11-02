@@ -26,6 +26,7 @@ public class WebActivity extends AppCompatActivity {
         getSupportActionBar().setTitle(("Web Page"));
 
 
+        //comments
 
         //receive url
         String getUrl=getIntent().getExtras().getString("url");
