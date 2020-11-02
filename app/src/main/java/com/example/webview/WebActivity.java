@@ -31,6 +31,8 @@ public class WebActivity extends AppCompatActivity {
         //receive url
         String getUrl=getIntent().getExtras().getString("url");
         web.setWebViewClient(new WebViewClient());
+
+        //used to enable javascript in webview
         web.getSettings().setJavaScriptEnabled(true);
         web.getSettings().setBuiltInZoomControls(true);
         web.loadUrl("http://"+getUrl);
